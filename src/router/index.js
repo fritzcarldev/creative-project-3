@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
+import GiveView from '../views/GiveView.vue'
+import BlogView from '../views/BlogView.vue'
+import DonateView from '../views/DonateView.vue'
 
 Vue.use(VueRouter)
 
@@ -9,6 +12,21 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/give',
+    name: 'give',
+    component: GiveView
+  },
+  {
+    path: '/donate',
+    name: 'donate',
+    component: DonateView
+  },
+  {
+    path: '/blog',
+    name: 'blog',
+    component: BlogView
   },
   {
     path: '/about',
